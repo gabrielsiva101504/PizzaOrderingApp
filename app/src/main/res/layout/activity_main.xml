@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pizza Order"
+            android:textSize="24sp"
+            android:textColor="#D84315"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/pizzaImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Size:"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rbSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small - ₱100"/>
+            <RadioButton android:id="@+id/rbMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medium - ₱150"/>
+            <RadioButton android:id="@+id/rbLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Large - ₱200"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Crust:"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioCrust"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rbThin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thin"/>
+            <RadioButton android:id="@+id/rbThick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thick"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toppings:"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox android:id="@+id/cbCheeseMush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cheese &amp; Mushroom (+₱20)" />
+
+        <CheckBox android:id="@+id/cbTomOnion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomato &amp; Onion (+₱15)" />
+
+        <Button
+            android:id="@+id/btnProcess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Process Order"
+            android:backgroundTint="#FF7043"
+            android:textColor="#FFF"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Order"
+            android:backgroundTint="#BDBDBD"
+            android:textColor="#000"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="#212121"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
